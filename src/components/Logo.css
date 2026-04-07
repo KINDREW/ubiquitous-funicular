@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo__circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c9a84c, #8a6f30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a0f00;
+  border: 1.5px solid rgba(201,168,76,0.6);
+  box-shadow: 0 0 16px rgba(201,168,76,0.38);
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.logo__name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.logo__sub {
+  font-size: 8.5px;
+  color: var(--w60);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Small variant */
+.logo--sm .logo__circle { width: 34px; height: 34px; font-size: 10px; }
+.logo--sm .logo__name   { font-size: 13px; }

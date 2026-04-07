@@ -1,0 +1,37 @@
+.cta-banner {
+  background: linear-gradient(135deg, rgba(45,27,107,0.5) 0%, rgba(20,14,45,0.92) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner__glow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(ellipse, rgba(74,45,143,0.2) 0%, transparent 72%);
+  pointer-events: none;
+}
+
+.cta-banner__body { position: relative; z-index: 1; }
+
+.cta-banner__title {
+  font-family: var(--font-accent);
+  font-size: clamp(22px, 3.5vw, 36px);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.cta-banner__sub {
+  font-size: 14px;
+  color: var(--w60);
+  max-width: 500px;
+  margin: 0 auto 28px;
+  line-height: 1.75;
+}

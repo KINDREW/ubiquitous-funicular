@@ -1,0 +1,103 @@
+.about__scripture-block {
+  background: rgba(45,27,107,0.22);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 26px;
+  align-items: center;
+  margin-top: 14px;
+}
+.about__scripture {
+  font-family: var(--font-accent);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+
+.about__who-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 44px;
+  align-items: start;
+}
+.about__icon-placeholder {
+  width: 200px;
+  height: 260px;
+  background: linear-gradient(135deg, rgba(45,27,107,0.5), rgba(20,14,45,0.9));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.about__icon-glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.07), transparent);
+}
+
+.about__h2 {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.about__vm-card {
+  background: rgba(20,14,45,0.85);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 38px 28px;
+  text-align: center;
+}
+
+.about__beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.about__leader-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+.about__leader-img {
+  width: 96px;
+  height: 112px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(45,27,107,0.7), rgba(20,14,45,0.9));
+  border: 2px solid var(--border-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.about__stat-card {
+  background: rgba(20,14,45,0.85);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .about__who-grid    { grid-template-columns: 1fr; }
+  .about__icon-placeholder { display: none; }
+  .about__beliefs-grid { grid-template-columns: repeat(3,1fr); }
+}
+@media (max-width: 600px) {
+  .about__beliefs-grid { grid-template-columns: 1fr 1fr; }
+  .about__scripture-block { grid-template-columns: 1fr; }
+}
